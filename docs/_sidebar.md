@@ -5,6 +5,8 @@
   - [Nginx Extras](nginx-extras.md)
   - [Adding DNS Records](add-dns-records.md)
 
-- Blazar Labs API
+- Wine Portal API
 
-  - Configuration
+  - [Configuration](wine-api-configuration.md)
+  - [Server folder structure](wine-api-folder-structure.md)
+  - [Routes](wine-api-routes)

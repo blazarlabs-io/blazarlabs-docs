@@ -16,25 +16,25 @@ Nginx is used as a reverse proxy, this allows pointing multiple domain names to 
 
 1. Update Ubuntu.
 
-```
+```bash
 sudo apt update
 ```
 
 2. Install Nginx
 
-```
+```bash
 sudo apt install nginx
 ```
 
 3. Adjust the Firewall
 
-```
+```bash
 sudo ufw app list
 ```
 
 You should see a result similar to:
 
-```
+```bash
 Output
 Available applications:
   Nginx Full
@@ -45,19 +45,19 @@ Available applications:
 
 Enable Nginx HTTP with the following command:
 
-```
+```bash
 sudo ufw allow 'Nginx HTTP'
 ```
 
 Verify your changes:
 
-```
+```bash
 sudo ufw status
 ```
 
 The output will indicated which HTTP traffic is allowed:
 
-```
+```bash
 Output
 Status: active
 
@@ -71,13 +71,13 @@ Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 
 4. Check Nginx status.
 
-```
+```bash
 systemctl status nginx
 ```
 
 The output should look like:
 
-````
+````bash
 Output
 ● nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
@@ -94,13 +94,13 @@ Output
 
 5. Install Certbot.
 
-```
+```bash
 sudo apt-get install certbot
 ```
 
 6. Use certbot to obtain SSL certificate for each domain (app). Make sure you add the corresponding DNS A records pointing to the VPS public IP address. See the [Adding DNS records documentation](/add-dns-records) for more details.
 
-```
+```bash
 sudo certbot certonly --nginx -d api.spiritsage.store
 sudo certbot certonly --nginx -d api.blazarlabs.io
 ```
@@ -111,11 +111,11 @@ Nginx will manage incoming requests and proxy them to the appropriate Node.js ap
 
 Start by creating a new Nginx configuration file for each domain:
 
-```
+```bash
 sudo nano /etc/nginx/sites-available/api.spiritsage.store
 ```
 
-```
+```bash
 server {
     listen 80;
     server_name api.spiritsage.store;
@@ -145,18 +145,18 @@ server {
 
 Save the file and create a symlink to enable the site:
 
-```
+```bash
 sudo ln -s /etc/nginx/sites-available/api.spiritsage.store /etc/nginx/sites-enabled/
 ```
 
 Test the configuration:
 
-```
+```bash
 sudo nginx -t
 ```
 
 Apply the new configuration by restarting Nginx:
 
-```
+```bash
 sudo systemctl restart nginx
 ```
