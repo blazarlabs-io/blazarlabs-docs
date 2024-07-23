@@ -11,7 +11,7 @@ The wine portal generates qrcodes for users to print on their wine labels. By sc
 When a winery registers a new wine, after completing the mandatory form, a new high resolution QR Code is created. When scaned, the code prmpts a url + the wine's reference number. This url redirects the user to our dynamic wine-viewer route in our web application.
 
 <div style="display:flex; align-items: center; gap: 24px; margin-top: 24px;">
-    <img src="/images/qrcode.png" alt="qrcode" style="width:200px;"/>
+    <img src="https://firebasestorage.googleapis.com/v0/b/wine-app-dev-c46a6.appspot.com/o/docs%2Fqrcode.png?alt=media&token=dc544a18-4fa4-44b2-acf2-03e521a0dfc6" alt="qrcode" style="width:200px;"/>
     <div style="background: #33333344; padding: 16px; border-radius: 12px;">
         <p>https://wines.blazarlabs.io/tokenized-wine?ref=ARQ2Q-1716910554998<p/>
     </div>

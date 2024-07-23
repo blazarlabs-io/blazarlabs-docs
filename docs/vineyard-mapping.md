@@ -8,10 +8,10 @@ The Google Maps API provides robust tools for integrating maps into web applicat
 
 ## Key Features
 
-![Google Map Polygon](./images/polygon.png)
+![Google Map Polygon](https://firebasestorage.googleapis.com/v0/b/wine-app-dev-c46a6.appspot.com/o/docs%2Fpolygon.png?alt=media&token=d799fa69-0569-48f8-bad3-b48e7ee3882c)
 
 <div style="display: flex; align-items: center; justify-content: center;">
-  <img src="./images/coordinates-db.png">
+  <img src="https://firebasestorage.googleapis.com/v0/b/wine-app-dev-c46a6.appspot.com/o/docs%2Fcoordinates-db.png?alt=media&token=84928726-985a-4dbc-915c-b18706fe7d1c">
 </div>
 
 ### Polygon Creation

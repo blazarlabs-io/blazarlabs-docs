@@ -41,7 +41,7 @@ Sensors continuously collect data and transmit it to a central system which then
 - **Threshold-Based Alerts**: Predefined thresholds for parameters such as temperature and humidity can be set. If sensor readings exceed these thresholds, alerts are generated and sent to the winery owners via email, SMS, or push notifications.
 - **Data Visualization**: The web app provides dashboards and visualization tools to monitor sensor data in real-time. Graphs and charts display trends and anomalies, allowing for proactive management.
 
-![sensor data graph](./images/sensor-data.png)
+![sensor data graph](https://firebasestorage.googleapis.com/v0/b/wine-app-dev-c46a6.appspot.com/o/docs%2Fiot-graph.png?alt=media&token=0bf33536-1387-4d81-a5c4-b042c6e0e2c2)
 
 ### Data Access and Reporting
 

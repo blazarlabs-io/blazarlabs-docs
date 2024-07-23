@@ -6,7 +6,7 @@ The Wine Tokenization Feature is an innovative solution integrated into our plat
 
 When a wine is tokenized, an IPFS is created an populated with a JSON file containing all the collected information from the wine and its winery. The result ipfs url is then posted to an endpoint on our blazarlabs API, which then runs the tokenization process starting with the mint of the asset on the carnano blockchain. All fees are payed by a single project wallet on our web app, hence removing the friction for non-blockchain users.
 
-![Wine Card](./images/wine-card.png)
+![Wine Card](https://firebasestorage.googleapis.com/v0/b/wine-app-dev-c46a6.appspot.com/o/docs%2Fwine-card.png?alt=media&token=fb869b95-f416-48e4-bada-2188f38552df)
 
 ## Integration To Backend
 
