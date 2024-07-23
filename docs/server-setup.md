@@ -8,6 +8,10 @@
 - Nginx [documentation](https://nginx.org/en/)
 - Certbot [From Letsencrypt](https://letsencrypt.org/)
 
+## Accessing the Server
+
+Access the server using **ssh** protocol. Contact the administrator in order to get credentials or setup an **ssh** key.
+
 ## Nginx
 
 Nginx is used as a reverse proxy, this allows pointing multiple domain names to the same IP address and redirect each one to the corresponding node app.
